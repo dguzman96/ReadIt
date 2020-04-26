@@ -1,0 +1,16 @@
+<h1>Welcome#sample</h1>
+<p>Find me in app/views/welcome/sample.html.erb</p>
+
+<%#message from controller_message" om welcome_controller %>
+  <%#will be unable to send data to view from controller %>
+  <%#will be able to send data to controller from view %>
+<%#<%= "Message from controller :
+#{@controller_message"} %>
+
+<%= link_to("Go to Index",
+    {:action => 'index',
+    :id => 5, :random => "Darren"}) %>
+
+<%# link_to("LinkText", "Link")
+  {:controller => 'welcome',
+  :action => 'index'} %>

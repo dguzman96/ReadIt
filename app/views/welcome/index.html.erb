@@ -1,0 +1,29 @@
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+
+
+<%# <%Ruby Code %>
+    <%# data will not be output onto screen %>
+<%# <%= Ruby Code%>
+    <%# data will be output onto screen %>
+    <%# make sure the = doesn't have a space after the % %>
+      <%# DON'T DO <% =  %>
+        <%# INCORRECT!!! %>
+      <%# DO <%=  %>
+        <%# CORRECT!!! %>
+<%# Comment %>
+
+<%= "Count to 10" %>
+
+<br />
+<%# for loop to cycle between 0 to 10 %>
+<% 11.times do |i| %>
+  <%# output i to screen %>
+  <%= i %>
+<% end %>
+
+<% if(params.has_key?(:id) &&
+      params.has_key?(:random)) %> <br/>
+      <%= "ID: #{params[:id]}" %> <br/>
+      <%= "RANDOM: #{params[:random]}" %> <br/>
+<% end %>
